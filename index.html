@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <p>EXPENSE/INCOME TRACKER SYSTEM</p>
+    </div>
+    <br><br>
+    <section class="mainc">
+        <h2 class="start">: Expense/Income Details :</h2>
+        <br>
+        <center class="texts">
+            <h3 class="entertext">Expense</h3>
+            <h3 class="entertext">Income</h3>
+        </center>
+        <div class="mainfield">
+            <div class="addexpense">
+                <form class="exp" id="form1">
+                    <div class="onefield">
+                        <label for="doe">Date</label>
+                        <input type="date" name="doe" id="doe">
+                    </div>
+                    <div class="onefield">
+                        <label for="name">Detail</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="onefield">
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div class="onefield">
+                        <button class="addexp" type="submit">Add Expense</button>
+                    </div>
+                    <div class="onefield">
+                        <h3 class="totalexp" id="totalexpense"></h3>
+                    </div>
+                </form>
+            </div>
+            <div class="addincome">
+                <form class="inc" id="form2">
+                    <div class="onefield">
+                        <label for="doi">Date</label>
+                        <input type="date" name="doi" id="doi">
+                    </div>
+                    <div class="onefield">
+                        <label for="source">Source</label>
+                        <input type="text" name="source" id="source">
+                    </div>
+                    <div class="onefield">
+                        <label for="amount">Amount</label>
+                        <input type="number" name="amount" id="amount">
+                    </div>
+                    <div class="onefield">
+                        <button class="addinc" type="submit">Add Income</button>
+                    </div>
+                    <div class="onefield">
+                        <h3 class="totalinc" id="totalincome"></h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="mainc">
+        <table class="showdata">
+            <h2 style="text-align: center;">Expense Table</h2>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Detail</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody class="expensedata">
+
+            </tbody>
+        </table>
+    </section>
+    <section class="mainc">
+        <table class="showdata">
+            <h2 style="text-align: center;">Income Table</h2>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Source</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody class="incomedata">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+</body>
+
+</body>
+
+</html>
